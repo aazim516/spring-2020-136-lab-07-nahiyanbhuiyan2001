@@ -33,7 +33,7 @@ std::string removeLeadingSpaces(std::string line)
   return empty;
 }
 
-
+//----------------TASK-B----//
 std::string inserttab(std::string line){
   int tab = 0;
   std::string cleaned;
