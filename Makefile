@@ -1,12 +1,14 @@
-main: main.o 
-	g++ -o main main.o 
+main: main.o shapes.o
+	g++ -o main main.o shapes.o
 
-tests: tests.o 
-	g++ -o tests tests.o
+tests: tests.o shapes.o
+	g++ -o tests tests.o shapes.o
 
 main.o: main.cpp
 
-tests.o: tests.cpp 
+tests.o: tests.cpp
 
-shapes.o: shape
-	rm -f main.o test.o 
+shapes.o: shapes.cpp
+
+clean:
+	rm -f main.o test.o shapes.o
