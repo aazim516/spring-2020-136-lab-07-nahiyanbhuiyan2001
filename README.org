@@ -8,6 +8,10 @@
 
 * Notes:
 
+*CODE REVIEW FROM Nahiyan:
+-Pro: I like the use of the string function std::string(tab, '\t').
+-Con: It's not clear to me how std::string(tab, '\t') adds and removes tabs since the first parameter is a int, peraps you can add a comment. Otherwise, the code seems to be organized.
+
 * File structure:
 
 * General instructions:
